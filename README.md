@@ -5,3 +5,5 @@ RCalc-GD is an editor plugin for Godot 4.2. Download and enable it to add an RCa
 You can type `\help` to open a help window, describing how to use RCalc, and listing all commands, operators, and units supported.
 
 For more information about RCalc, [see the GitHub repo](https://github.com/gelvinp/rcalc).
+
+This plugin relies on the [GDExtension Bindings](https://github.com/gelvinp/rcalc-gdextension) for RCalc. 
