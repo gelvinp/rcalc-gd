@@ -7,7 +7,7 @@
 [ext_resource type="LabelSettings" uid="uid://cp5iqjvalrtfv" path="res://addons/rcalc_gd/assets/rcalc_label_large.tres" id="4_udqyu"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_2p73i"]
-bg_color = Color(0.147, 0.168, 0.203, 1)
+bg_color = Color(0.1, 0.1, 0.1, 0.6)
 corner_radius_top_left = 6
 corner_radius_top_right = 6
 corner_radius_bottom_right = 6

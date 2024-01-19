@@ -86,12 +86,16 @@ func _on_display_info(info: String) -> void:
 	message.text = info
 	message.modulate = Color.WHITE
 	message.visible = true
+	
+	scroll_to_bottom()
 
 
 func _on_display_error(error: String) -> void:
 	message.text = error
 	message.modulate = error_color
 	message.visible = true
+	
+	scroll_to_bottom()
 
 
 func _on_add_stack_item(item: RCalcStackItem) -> void:
@@ -130,6 +134,8 @@ func _on_scratchpad_text_submitted(new_text: String) -> void:
 	scratchpad.text = ""
 	scroll_to_bottom()
 
+func _on_scratchpad_text_changed(new_text: String) -> void:
+	engine.cancel_suggestion()
 
 func build_stack_item_view(item: RCalcStackItem) -> RCalcNewlineFlowContainer:
 	var container := RCalcNewlineFlowContainer.new()
